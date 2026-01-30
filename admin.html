@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NovemCare | Pacientes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/ninetails.png" alt="NovemCare Logo">
+      <div>
+        <h1>NovemCare</h1>
+        <p>Salud que trasciende</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="patient.html">Pacientes</a>
+      <a href="doctor.html">Médicos</a>
+      <a href="admin.html" class="active">Control</a>
+    </nav>
+  </header>
+<h2 class="itinTitulo">Control de Citas</h2>
+
+<section class="card">
+  <h3>Nueva / Editar Cita</h3>
+
+  <form id="adminForm" class="appointment-form">
+    <input type="hidden" id="appointmentId">
+
+    <label>
+      Paciente
+      <input type="text" id="patientInput">
+    </label>
+
+    <label>
+      Doctor
+      <select id="doctorInput">
+        <option value="">Selecciona un doctor</option>
+        <option>Dr. Reyes</option>
+        <option>Dr. Novak</option>
+        <option>Dr. Chen</option>
+      </select>
+    </label>
+
+    <div class="form-row">
+      <label>
+        Fecha
+        <input type="date" id="dateInput">
+      </label>
+
+      <label>
+        Hora
+        <input type="time" id="timeInput">
+      </label>
+    </div>
+
+    <label>
+      Motivo
+      <textarea id="reasonInput"></textarea>
+    </label>
+
+    <button class="primary-btn">Guardar</button>
+  </form>
+</section>
+
+<section class="card">
+  <h3>Lista de Citas</h3>
+
+  <table class="admin-table">
+    <thead>
+      <tr>
+        <th>Paciente</th>
+        <th>Doctor</th>
+        <th>Fecha</th>
+        <th>Hora</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="appointmentsTable"></tbody>
+  </table>
+</section>
+<script src="js/admin.js"></script>
+<footer class="site-footer">
+    <div>
+      <p>📞 +52 55 1234 5678 | +52 55 8765 4321</p>
+      <p>📍 Av. Ficticia 404, Ciudad Central</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SCP Foundation</p>
+    </div>
+  </footer>
+</html>

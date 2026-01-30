@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>NovemCare | Pacientes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="brand">
+      <img src="assets/ninetails.png" alt="NovemCare Logo">
+      <div>
+        <h1>NovemCare</h1>
+        <p>Salud que trasciende</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="patient.html" class="active">Pacientes</a>
+      <a href="doctor.html">Médicos</a>
+      <a href="admin.html">Control</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="container">
+
+    <h2>Agendar Cita Médica</h2>
+
+    <!-- DOCTORS -->
+    <section class="card">
+      <h3>Doctores Disponibles</h3>
+      <div class="doctor-list">
+        <button class="doctor-btn">Dr. Reyes</button>
+        <button class="doctor-btn">Dr. Novak</button>
+        <button class="doctor-btn">Dr. Chen</button>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="card">
+      <h3>Datos de la Cita</h3>
+
+      <form class="appointment-form">
+        <label>
+          Nombre del Paciente
+          <input type="text" placeholder="Nombre completo">
+        </label>
+
+        <div class="form-row">
+          <label>
+            Fecha
+            <input type="date">
+          </label>
+
+          <label>
+            Hora
+            <input type="time">
+          </label>
+        </div>
+
+        <label>
+          Motivo
+          <textarea placeholder="Razón… (Opcional)"></textarea>
+        </label>
+
+        <button type="submit" class="primary-btn">
+          Agendar Cita
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div>
+      <p>📞 +52 55 1234 5678 | +52 55 8765 4321</p>
+      <p>📍 Av. Ficticia 404, Ciudad Central</p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SCP Foundation</p>
+    </div>
+  </footer>
+<script src="js/patient.js"></script>
+</body>
+</html>
