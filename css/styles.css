@@ -252,3 +252,50 @@ textarea {
   background: #dc2626;
   color: white;
 }
+/* ======================
+   MODO CELULAR
+====================== */
+@media (max-width: 768px) {
+
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main,
+  .container,
+  .card {
+    width: 95%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
